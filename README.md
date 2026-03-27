@@ -1,64 +1,116 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="350">
 </p>
 
-## About Laravel
+<h1 align="center">🥗 HealthyKids</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+Aplicación web desarrollada con Laravel enfocada en promover hábitos saludables en niños.  
+Este proyecto no utiliza base de datos.
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🚀 Descripción
 
-## Learning Laravel
+**HealthyKids** es una aplicación web construida con Laravel que presenta contenido orientado a la salud infantil, como alimentación, recomendaciones y estilos de vida saludables.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+El proyecto está diseñado sin conexión a base de datos, por lo que es ligero, rápido y fácil de ejecutar en cualquier entorno local.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 📋 Requisitos
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
-### Premium Partners
+* PHP >= 8.0
+* Composer
+* Git (opcional)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+---
 
-## Contributing
+## 📦 Instalación
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Sigue estos pasos para ejecutar el proyecto en tu máquina:
 
-## Code of Conduct
+1. Clona el repositorio:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+git clone https://github.com/valentinavillagh-gif/healthykids.git
+```
 
-## Security Vulnerabilities
+2. Entra en la carpeta del proyecto:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+cd healthykids
+```
 
-## License
+3. Instala las dependencias:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+composer install
+```
+
+4. Crea el archivo de entorno:
+
+```bash
+cp .env.example .env
+```
+
+5. Genera la clave de la aplicación:
+
+```bash
+php artisan key:generate
+```
+
+---
+
+## ⚙️ Configuración
+
+Este proyecto **no requiere base de datos**.
+
+Puedes dejar esta configuración en el archivo `.env`:
+
+```env
+DB_CONNECTION=null
+```
+
+---
+
+## ▶️ Ejecución
+
+Inicia el servidor local con:
+
+```bash
+php artisan serve
+```
+
+Luego abre tu navegador en:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 📁 Estructura del Proyecto
+
+* `routes/web.php` → Definición de rutas
+* `resources/views/` → Vistas Blade
+* `public/` → Archivos públicos (CSS, JS, imágenes)
+
+---
+
+## 🧠 Notas
+
+* No utiliza base de datos
+* Proyecto ideal para aprendizaje y demostraciones
+* Enfocado en interfaz y contenido estático
+
+---
+
+## 👩‍💻 Autor
+
+Desarrollado por **Valentina Villa Gutiérrez**
+
+---
